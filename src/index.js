@@ -167,8 +167,8 @@ function jsPDFInvoiceTemplate(props) {
 
   var doc = new jsPDF(options);
 
-  var docWidth = doc.internal.pageSize.width;
-  var docHeight = doc.internal.pageSize.height;
+  var docWidth = Math.round(doc.internal.pageSize.width);
+  var docHeight = Math.round(doc.internal.pageSize.height);
 
   var colorBlack = "#000000";
   var colorGray = "#4d4e53";
